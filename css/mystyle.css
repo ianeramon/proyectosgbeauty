@@ -89,11 +89,10 @@ p {
 
 
 header {
-  border-bottom: 1px groove rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   min-height: 90px;
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right bottom, #ffffff, #fefeff, #fefdff, #fefcff, #fefbff, #fef7ff, #fef2ff, #feeefe, #fde6fd, #fcdefc, #fad6fa, #f9cef9);
   align-items: center;
   padding: 10px;
   width: 100%;
@@ -107,10 +106,26 @@ h1 {
   font-family: letrasg;
   src: url(letrasg.ttf;)
 }
+/* ----------------------------------------------
+ANIMACIONES
+ * ---------------------------------------------- */
+
+
+ .text-pop-up-top{-webkit-animation:text-pop-up-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:text-pop-up-top .5s cubic-bezier(.25,.46,.45,.94) both}
+
+ @-webkit-keyframes text-pop-up-top{0%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:none}100%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}}@keyframes text-pop-up-top{0%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:none}100%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}}
+
+ .tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+ @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+ /* ----------------------------------------------
+FIN DE ANIMACIONES
+ * ---------------------------------------------- */
 
 .logoSg {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
+
 }
 
 .logoSg img {
@@ -146,13 +161,12 @@ footer {
   display: flex;
   justify-content: space-between;
   min-height: 50px;
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right bottom, #ffffff, #fbf8ff, #f9f1ff, #f9e9ff, #fbe1ff, #fbd8fe, #fccffd, #fdc5fb, #fbb9f9, #f9adf8, #f7a1f6, #f494f4);
   align-items: center;
   padding: 10px;
   position: absolute;
   bottom: 0;
   width: 100%;
-  border: 1px groove black;
 }
 
 .sgbeautyFooter {
@@ -283,34 +297,10 @@ footer {
 }
   .gallery-containerdos {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3fr 3fr 3fr 2fr 2fr 0.1fr 1fr 1fr;
     gap: 1px 1px;
     padding: 10px;
-  }
-
-  .gallery__itemdos:nth-child(1) {
-    grid-column-start: span 3;
-  }
-
-  .gallery__itemdos:nth-child(2) {
-    grid-column-start: span 3;
-  }
-
-  .gallery__itemdos:nth-child(3) {
-    grid-column-start: span 3;
-  }
-
-  .gallery__itemdos:nth-child(6) {
-    grid-column-start: span 3;
-  }
-
-  .gallery__itemdos:nth-child(7) {
-    grid-column-start: span 3;
-  }
-
-  .gallery__itemdos:nth-child(8) {
-    grid-column-start: span 3;
   }
 
   /* dispositivos pequeños (tablets y celulares grandes, 600px para arriba) */
