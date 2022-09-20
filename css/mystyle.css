@@ -1,10 +1,18 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
+.col{
+padding: 20px;
+} 
+h1{
+padding-top: 7px;
+}
+
+
+/* body {
   font-family: sans-serif;
   margin: 0;
   min-height: 100vh;
@@ -19,7 +27,7 @@ body {
 }
 
 
-/* inicio formulario */
+
 
 
 .formularioContacto {
@@ -33,7 +41,7 @@ ul {
   list-style-type: none;
 }
 
-/* fin formulario */
+
 
 .divUñas {
   width: auto;
@@ -80,12 +88,8 @@ p {
     height: 30px;
     margin: 5px 5px;
     margin-left: 95%;
-   } */
-/* fin imagen sticky */
+   } 
 
-
-
-/* header */
 
 
 header {
@@ -106,9 +110,7 @@ h1 {
   font-family: letrasg;
   src: url(letrasg.ttf;)
 }
-/* ----------------------------------------------
-ANIMACIONES
- * ---------------------------------------------- */
+
 
 
  .text-pop-up-top{-webkit-animation:text-pop-up-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:text-pop-up-top .5s cubic-bezier(.25,.46,.45,.94) both}
@@ -118,9 +120,7 @@ ANIMACIONES
  .tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
  @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 
- /* ----------------------------------------------
-FIN DE ANIMACIONES
- * ---------------------------------------------- */
+
 
 .logoSg {
 display: flex;
@@ -150,11 +150,7 @@ nav a:hover {
 }
 
 
-/* fin header*/
 
-
-
-/* footer inicio*/
 
 
 footer {
@@ -173,9 +169,7 @@ footer {
   display: flex;
 }
 
-/* fin de footer*/
 
-/*Estilos de galeria GRID*/
 
 .gallery-container {
   display: grid;
@@ -225,9 +219,7 @@ footer {
   width: 100%;
 }
 
-/*FIN Estilos de galeria GRID*/
 
-/*grid index*/
 .gallery-containerdos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -277,11 +269,7 @@ footer {
 
 }
 
-/*fin grid index*/
 
-/*media queries*/
-
-/* dispositivos muy pequeños (celulares, 600px para abajo) */
 @media only screen and (max-width: 600px) {
   body {
     background-color: rgb(255, 255, 255);
@@ -303,7 +291,6 @@ footer {
     padding: 10px;
   }
 
-  /* dispositivos pequeños (tablets y celulares grandes, 600px para arriba) */
   @media only screen and (min-width: 600px) {
     body {
       background-color: rgb(255, 255, 255);
@@ -321,7 +308,6 @@ footer {
     }
   }
 
-  /* dispositivos medianos (tablets grandes, 768px para arriba) */
   @media only screen and (min-width: 768px) {
     body {
       background-color: rgb(255, 255, 255);
@@ -332,7 +318,7 @@ footer {
     }
   }
 
-  /* dispositivos grandes (netbooks y monitores pequeños, 992px para arriba) */
+  
   @media only screen and (min-width: 992px) {
     body {
       background-color: rgb(255, 255, 255);
@@ -352,4 +338,4 @@ footer {
   }
   }
     
-  
+   */
